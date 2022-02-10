@@ -1,0 +1,1 @@
+select DISTINCT o.product_id, u.name as name_user from users u join products p join orders o GROUP BY o.user_id HAVING COUNT(*) > 3;
